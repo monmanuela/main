@@ -73,7 +73,7 @@ public class Route {
         return otherRoute != null
                 && otherRoute.getSource().equals(getSource())
                 && otherRoute.getDestination().equals(getDestination())
-                && otherRoute.getOrder().equals(getOrder())
+                && otherRoute.getOrder().equals(getOrder());
     }
 
     /**
@@ -94,7 +94,7 @@ public class Route {
         return otherRoute.getSource().equals(getSource())
                 && otherRoute.getDestination().equals(getDestination())
                 && otherRoute.getOrder().equals(getOrder())
-                && otherRoute.getDeliveryman().equals(getDeliveryman())
+                && otherRoute.getDeliveryman().equals(getDeliveryman());
     }
 
     @Override
@@ -112,7 +112,7 @@ public class Route {
                 .append(" Address: ")
                 .append(getDestination())
                 .append(" Deliveryman: ")
-                .append(getDeliveryman())
+                .append(getDeliveryman());
         return builder.toString();
     }
 }
