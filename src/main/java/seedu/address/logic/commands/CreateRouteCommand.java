@@ -18,7 +18,7 @@ public class CreateRouteCommand extends RouteCommand {
     public CommandResult execute(Model model, CommandHistory history) {
         requireNonNull(model);
 
-        return new CommandResult("Executed create route command.");
+        return new CommandResult(MESSAGE_SUCCESS);
     }
 
 }
